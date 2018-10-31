@@ -15,10 +15,10 @@ So, a dog still needs to know who its owner is, but now we know that an owner ca
 
 ## Defining Our Classes
 
-Let's start by defining two classes, `Owner` and `Car`. 
-* An owner should be instantiated with a `name` and an `age`. 
-* A car should be instantiated with a `make`, `model`, and `year`. 
-* The relationship between the two classes should be such that an owner has many cars and a car belongs to an owner. It is our job to make sure our classes and instances are set up to show this. 
+Let's start by defining two classes, `Owner` and `Car`.
+* An owner should be instantiated with a `name` and an `age`.
+* A car should be instantiated with a `make`, `model`, and `year`.
+* The relationship between the two classes should be such that an owner has many cars and a car belongs to an owner. It is our job to make sure our classes and instances are set up to show this.
 * Think about which class(es) also must have an `_all` class variable, and be sure to have setter and getter (read and write) instance methods for each attribute for an owner and for a car as well as a class method that returns the `_all` list.
 
 
@@ -33,7 +33,7 @@ pete = Owner("Pete", 30)
 
 ```python
 from car import Car
-# create several instances of the Car class and associate them to owners. 
+# create several instances of the Car class and associate them to owners.
 # remember owners can have more than one car associated with them, but a car can only have one owner
 ```
 
@@ -52,11 +52,11 @@ alexa.find_my_cars()
 pete.find_my_cars()
 ```
 
-Great work! Now, let's try this out with another domain to get even more practice. Let's work with a `Driver` and a `Trip` class. 
-* The relationship between the two should be that a driver has many trips and that a trip belongs to one driver. 
-* A driver should be instantiated with at least a *name* and a trip should be instantiated with at least a start and a destination (i.e. `battery park` to `central park`). 
-* Remember a trip should know which **driver** it belongs to and the Trip class should keep track of all trip instances in the `_all` class variable. 
-* Define the appropriate getter and setter instance methods for both the driver and trip instance objects as well as a class method, `all`, that returns the `_all` list. 
+Great work! Now, let's try this out with another domain to get even more practice. Let's work with a `Driver` and a `Trip` class.
+* The relationship between the two should be that a driver has many trips and that a trip belongs to one driver.
+* A driver should be instantiated with at least a *name* and a trip should be instantiated with at least a start and a destination (i.e. `battery park` to `central park`).
+* Remember a trip should know which **driver** it belongs to and the Trip class should keep track of all trip instances in the `_all` class variable.
+* Define the appropriate getter and setter instance methods for both the driver and trip instance objects as well as a class method, `all`, that returns the `_all` list.
 
 
 ```python
@@ -69,7 +69,7 @@ hortense = Driver("Hortense")
 
 ```python
 from trip import Trip
-# create several instances of the Trip class and associate them to drivers. 
+# create several instances of the Trip class and associate them to drivers.
 # remember to associate a trip with a driver
 ```
 
@@ -91,4 +91,4 @@ steve.my_trip_summaries()
 ```
 
 ## Summary
-Great work! In this lab we practiced creating one to many relationships. We built on the belongs to relationship and were able to make it a bit more interesting by associating more than one instance object with another. We reinforced our knowledge by building out two different one to many domains and built intance methods that returned and operated on the one to many relationships. 
+Great work! In this lab we practiced creating one to many relationships. We built on the belongs to relationship and were able to make it a bit more interesting by associating more than one instance object with another. We reinforced our knowledge by building out two different one to many domains and built intance methods that returned and operated on the one to many relationships.
